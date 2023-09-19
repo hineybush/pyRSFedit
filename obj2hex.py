@@ -1,11 +1,11 @@
-# import as obj straight up
-
-
 import math
 import os
 import csv
 import mmap
 from swapExistSTRM import ogToNewStrm
+
+blenderObj = 'revospeedQB_1.obj'
+rsfName = 'HELMETFACEMASKSALL_base.RSF'
 
 def fileStuff():
     dirID = 0
@@ -208,8 +208,7 @@ def indexRSF(rsfIn, currOutputDir):
     
 ######   
 
-blenderObj = 'revospeedQB_1.obj'
-rsfName = 'HELMETFACEMASKSALL_base.RSF'
+
 
 outputIndx, outputStrm, currWD, inputPath, currOutputDir = fileStuff()
     
@@ -229,4 +228,4 @@ outputIndx.write(indxOut)
 outputStrm.write(strmOut)
 print('indx and strm written out!')
 
-indexRSF(rsfName, currOutputDir)
+#indexRSF(rsfName, currOutputDir)
